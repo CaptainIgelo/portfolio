@@ -91,9 +91,14 @@ main {
     padding: 7rem 0 6rem;
 }
 
+.hero,
+.projects,
+.contact{
+    padding: 5rem 0;
+}
+
 .hero h1 {
     font-size: clamp(2.75rem, 6vw,  4.5rem);
-    /* letter-spacing: -0.04em; */
 }
 
 .hero p{
@@ -106,7 +111,7 @@ main {
 
 .hero-content {
     max-width: 40rem;
-    margin 0 auto; 
+    margin: 0 auto; 
 }
 
 .eyebrow {
@@ -191,20 +196,22 @@ h2 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 1.25rem
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 0rem;
     padding: 1.75rem;
     background: rgba(var(--surface-rgb), 0.7);
     border-radius: 1rem;
     border: 1px solid rgba(var(--border-rgb),0.12);
     box-shadow: 0 10px 30px rgba(var(--shadow-rgb), 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    min-height: 100%;
 }
 
 .project-card:hover{
@@ -216,18 +223,56 @@ h2 {
 .project-card h3{
     font-size: 1.25rem;
     line-height: 1.3;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
+    min-height: 3.25rem;
 }
 
-.project-card p{
+.section-intro {
+    max-width: 42rem;
+    margin-bottom: 2rem;
     color: var(--text-muted);
     line-height: 1.7;
-    margin-bottom: 0.25rem;
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    background: rgba(var(--accent-rgb),0.12);
+    border: 1px solid rgba(var(--accent-rgb), 0.18);
+}
+
+.project-description{
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 0;
 }
 
 .tech-stack {
-    color: var(--accent);
-    font-weight: 700;
+    margin-top: auto;
+    padding-top: 1.25rem;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.contact{
+    padding: 5rem 0;
+}
+
+.contact .section-intro{
+    max-width: 38rem;
+    margin-bottom: 2rem;
+}
+
+.contact .hero-actions{
+    margin-top: 0;
 }
 
 .contact p{
@@ -283,6 +328,10 @@ h2 {
   .section-heading {
     margin-bottom: 1.5rem;
   }
+
+  .contact .section-intro {
+  max-width: 100%;
+}
 }
 
 @media (max-width: 44rem) {
