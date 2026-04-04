@@ -249,6 +249,20 @@ h2 {
     border: 1px solid rgba(var(--accent-rgb), 0.18);
 }
 
+.project-note {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0.85rem 1.5rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: rgba(var(--border-rgb), 0.1);
+    border: 1px solid rgba(var(--border-rgb), 0.2);
+}
+
 .project-description{
     color: var(--text-muted);
     line-height: 1.7;
