@@ -18,10 +18,9 @@ Aktuell enthält die Website:
 
 ## Technologien 
 
-- HTML 
-- CSS 
-- JavaScript
-- GitHub Pages 
+- HTML5 (semantische Struktur)
+- CSS3 (Flexbox/Grid, moderne Features)
+- GitHub Pages (Static Hosting)
 
 ## Ziel des Projekts 
 
