@@ -114,6 +114,29 @@ main {
     margin: 0 auto; 
 }
 
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    padding: 4rem 2rem;
+}
+
+.hero-image-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image{
+    border-radius: 1rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
 .eyebrow {
     color: var(--accent);
     font-weight: 700;
@@ -405,4 +428,16 @@ h2 {
 .button:focus-visible{
     outline: 2px solid var(--accent);
     outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-image {
+        max-height: 300px;
+    }
 }
