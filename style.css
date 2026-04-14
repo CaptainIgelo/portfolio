@@ -86,8 +86,10 @@ a{
 
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -95,6 +97,12 @@ a{
     font-weight: 700;
     color: var(--text);
     letter-spacing: 0.03rem;
+    transition: color 0.2s ease;
+}
+
+.logo:hover,
+.logo:focus{
+    color: var(--accent);
 }
 
 .nav-links{
