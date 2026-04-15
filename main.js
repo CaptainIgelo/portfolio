@@ -28,7 +28,7 @@ sections.forEach(section => observer.observe(section));
 const typedTarget = document.querySelector('.hero h2');
 const phrases = [
     'Technisch erfahren, lernbereit, offen', 
-    'Praktikum gesucht im großraum Köln', 
+    'Praktikum gesucht im Großraum Köln', 
 ];
 
 
