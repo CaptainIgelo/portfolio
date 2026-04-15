@@ -66,3 +66,13 @@ const type = () => {
 };
 
 type(); 
+
+
+// Toast Notification on E-mail button
+
+function copyEmail() {
+    navigator.clipboard.writeText("michael.igel1993@gmail.com");
+    const toast = document.getElementById("toast");
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 2500)
+}

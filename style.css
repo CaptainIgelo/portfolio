@@ -295,6 +295,24 @@ h2 {
 }
 
 
+.toast{
+    position: fixed;
+    bottom: 8rem;
+    left: 47%; 
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3 ease;
+    pointer-events: none;
+}
+
+.toast.show {
+    opacity: 1;
+}
+
 
 /* ----- PROJECTS ----- */
 
