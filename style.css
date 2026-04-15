@@ -1,3 +1,6 @@
+
+
+/* ----- FONTS ---- */
 @font-face {
     font-family: 'Jura';
     src: url('./assets/fonts/Jura-Light.ttf') format('truetype');
@@ -33,6 +36,9 @@
     font-display: swap;
 }
 
+
+/* ---- COLOR VARIABLES ---- */
+
 :root {
     --bg: #0f172a;
     --surface: #1e293b;
@@ -48,14 +54,16 @@
     --shadow-rgb: 2, 6, 23; 
 }
 
-html{
-    font-size: 100%;
-}
+/* ------ RESET / SETUP ----- */
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html{
+    font-size: 100%;
     scroll-behavior: smooth;
 }
 
@@ -73,6 +81,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+
+
+/* ----- HEADER & NAV ----- */
 
 .site-header{
     position: sticky;
@@ -121,6 +133,8 @@ a{
     color: var(--accent);
 }
 
+
+/* ----- Main Layout ----  */
 main {
     width: 100%;
     max-width: 1100px;
@@ -169,7 +183,6 @@ main {
 
 .hero-content {
     max-width: 40rem;
-    margin: 0 auto; 
 }
 
 .hero-grid{
@@ -252,7 +265,7 @@ h2 {
 
 .button.primary:hover,
 .button.primary:focus{
-    background-color: #22c55e;
+    background-color: var(--accent-dark);
 }
 
 .button.secondary{
@@ -266,10 +279,6 @@ h2 {
     color: var(--accent);
 }
 
-.projects, 
-.contact {
-    padding: 5rem 0;
-}
 
 .section-heading{
     margin-bottom: 2rem;
@@ -285,14 +294,12 @@ h2 {
 .project-card {
     display: flex;
     flex-direction: column;
-    gap: 0rem;
     padding: 1.75rem;
     background: rgba(var(--surface-rgb), 0.7);
     border-radius: 1rem;
     border: 1px solid rgba(var(--border-rgb),0.12);
     box-shadow: 0 10px 30px rgba(var(--shadow-rgb), 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-    min-height: 100%;
 }
 
 .project-card:hover{
@@ -355,10 +362,6 @@ h2 {
     padding-top: 1.25rem;
     color: var(--text);
     font-weight: 600;
-}
-
-.contact{
-    padding: 5rem 0;
 }
 
 .contact .section-intro{
