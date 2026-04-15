@@ -141,11 +141,12 @@ main {
     margin: 0 auto;
 }
 
+
+/* ----- HERO ----- */
 .hero{
     min-height: 85vh;
     display: flex;
     align-items: center;
-    padding: 7rem 0 6rem;
 }
 
 .hero,
@@ -208,14 +209,8 @@ main {
     object-fit: cover;
 }
 
-.eyebrow {
-    color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 14px;
-}
+
+/* ----- TYPOGRAPHY ----- */
 
 h1 {
     font-size: 4rem;
@@ -235,6 +230,17 @@ h2 {
     margin-bottom: 1.75rem;
     max-width: 40rem;
 }
+
+.eyebrow {
+    color: var(--accent);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+/* ----- Buttons ----- */
 
 .hero-actions {
     display: flex;
@@ -279,6 +285,16 @@ h2 {
     color: var(--accent);
 }
 
+
+.nav-links a:focus-visible,
+.button:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+
+
+/* ----- PROJECTS ----- */
 
 .section-heading{
     margin-bottom: 2rem;
@@ -364,6 +380,9 @@ h2 {
     font-weight: 600;
 }
 
+
+/* ---- CONTACT ----- */
+
 .contact .section-intro{
     max-width: 38rem;
     margin-bottom: 2rem;
@@ -378,12 +397,9 @@ h2 {
     margin-bottom: 1.25rem;
 }
 
-.nav-links a:focus-visible,
-.button:focus-visible{
-    outline: 2px solid var(--accent);
-    outline-offset: 3px;
-}
 
+
+/* ----- MEDIA QUERIES ----- */
 
 @media (max-width: 768px) {
     .site-header {
