@@ -144,6 +144,21 @@ main {
     font-size: clamp(2.75rem, 6vw,  4.5rem);
 }
 
+.hero h2 {
+    min-height: 2.4em;
+}
+
+.hero h2::after {
+    content: '|';
+    color: var(--accent);
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+}
+
 .hero p{
     font-size: 1.2rem;
     line-height: 1.8;
