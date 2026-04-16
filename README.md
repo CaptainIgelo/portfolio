@@ -1,32 +1,29 @@
 # Portfolio Website
 
-Meine persöhnliche Portfolio-Website zur Präsentation meiner Projekte, 
-Lernfortschritte und meines Profils als Entwickler. 
+My personal portfolio. With a growing collection of projects and the work I'm doing as I build my career in software development 
 
-## Live Demo 
+🌐 **Live:** [captainigelo.github.io/portfolio](https://captainigelo.github.io/portfolio/)
 
-[Zur Website](https://captainigelo.github.io/portfolio/)
+## What' on it 
 
-## Überblick
+This project serves as a central portfolio page where I showcase myself, my past projects, and my growth in software development.
 
-Dieses Projekt dient als zentrale Portfolio-Seite, auf der ich mich, meine bisherigen Projekte und meine Entwicklung in der Softwareentwicklung präsentiere. 
+- Hero section with a short intro 
+- Projects with description and status 
+- Contact section with links to my profiles
 
-Aktuell enthält die Website:
-- einen Hero-Bereich mit Kurzvorstellung
-- einen Projekte-Bereich mit meinen aktuellen und geplanten Projekten
-- einen Kontaktbereich mit Links zu meinen Profilen 
+## Tech-Stack 
 
-## Technologien 
-
-- HTML5 (semantische Struktur)
-- CSS3 (Flexbox/Grid, moderne Features)
+- HTML5 (semantic structur)
+- CSS3 (flexbox/grid, modern features)
+- JavaScript (CTA, animations)
 - GitHub Pages (Static Hosting)
 
-## Ziel des Projekts 
+## Goals 
 
-Ziel dieses Projekts ist es, ein professionelles und mit der Zeit wachsendes Protfolio aufzubauen, das ich für Bewerbunge, Praktika und zur Dokumentation meines Lernfortschritts nutzen kann. 
+The goal of this project is to build a professional portfolio that will grow over time, which I can use for job applications, internships, and to document my learning progress
 
-## Lokale ausführung 
+## Run Local 
 
 ```bash 
 git clone https://github.com/CaptainIgelo/portfolio.git
@@ -34,7 +31,7 @@ cd portfolio
 python -m http.server 8000 
 ```
 
-Anschließend im Browser öffnen: 
+Run browser: 
 
 ```text 
 http://localhost:8000
@@ -42,5 +39,5 @@ http://localhost:8000
 
 ## Status 
 
-Das Portfolio wird laufend erweitert und verbessert. Weitere Projekte, Detailseiten und 
-Optimierungen folgen Schritt für Schritt. 
+The portfolio ist constantly being expanded and improved.
+Additional projects, detailing pages, and optimizations will be added step by step. 
